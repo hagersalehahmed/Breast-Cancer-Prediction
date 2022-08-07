@@ -32,4 +32,4 @@ The BCWD dataset is divided into two parts: a training set and a testing set. We
   https://keras.io/keras_tuner/ 
  
 ## Feature selection methods
-Recursive Feature Elimination (RFE) is a wrapper-type feature selection algorithm. RFE assigned scores for each features, and features that have the highest scores will be extracted.  Scikit-learn library \cite{RFE} is used to apply RFE with random forest.
+Recursive Feature Elimination (RFE) is a wrapper-type feature selection algorithm. RFE assigned scores for each features, and features that have the highest scores will be extracted.  
