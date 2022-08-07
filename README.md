@@ -18,7 +18,18 @@ The BCWD dataset is divided into two parts: a training set and a testing set. We
 
 ## Deep Learning
 
-The optimized deep RNN consists of the input layer, five hidden layers, five dropout layers, and the output layer. In each hidden layer, we optimized the number of neurons and rate values of the dropout layer.
+ - The optimized deep RNN consists of the input layer, five hidden
+   layers, five dropout layers, and the output layer. In each hidden
+   layer, we optimized the number of neurons and rate values of the
+   dropout layer. 
+   
+ - KerasTuner was used to optimize RNN. It has built-in
+   Bayesian Optimization, Hyperband, and Random Search algorithms, as
+   well as the ability for researchers to enhance it to try out new
+   search methods.  Dropout has been applied to hidden layers with the
+   probability of retaining from 0.1 to 0.9. The number of neurons have
+   adapted from 50 neurons to 700 neurons.
 
+ 
 ## Feature selection methods
 Recursive Feature Elimination (RFE) is a wrapper-type feature selection algorithm. RFE assigned scores for each features, and features that have the highest scores will be extracted.  Scikit-learn library \cite{RFE} is used to apply RFE with random forest.
